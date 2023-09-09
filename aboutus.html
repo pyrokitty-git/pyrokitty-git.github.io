@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang-eng>
+<html lang-"en">
+<!-- It begins. I'm going to look back on this someday and wince. -Horrorshow Programmer 9/1/23 -->
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Horrorshow Hospital Radio</title>
 </head>
 
+<!-- Inline CSS stuff. I have banged my head against this for a good while now. -Horrorshow Programmer -->
 <style>
 body {
 	background-color: black;
@@ -18,22 +20,36 @@ footer {
     position: relative;
 }
 
-.footer span {
+.footer {
     position: absolute;
-    bottom: 0;
-    right: 0;
+	text-align: center;
+    bottom: 0; <!-- i hope this fucking works this time -horrorshow programmer 9/8/23 -->
 }
+<!-- attempting to make the page scroll on mobile -horrorshow programmer -->
+html { overflow-y: scroll; }
+body { position: absolute; }
 </style>
 
-<!-- I just borrowed the code that you guys made for the main page, hope that's alright! -Partybarn Programmer 9/8/23 -->
+<!-- Body/div stuff, this is where all the words on the page go (among other things). This is either the best or worst way to do this, tbh. Please contact me if you know a better way to do this. -Horrorshow Programmer -->
 <body>
 	<div class="main">
 		<div class="mainbody">
-			<h1 style=" text:align: center;">About Us</h1>
-			<p style=" text:align: center;"> 
-			<br> 
+			<h1 style=" text:align: center;">Horrorshow Hospital Radio Broadcast</h1>
+			<p style=" text:align: center;">The Horrorshow Hospital Radio Group is proud to present: The Horrorshow Hospital Radio Broadcast, A Live radio stream which seeks to provide listeners with the "latest" and "greatest" listening experience, Broadcasted straight to your:
+			<br> Phone, Personal Computer, Cat, Smartfridge, Smart TV Or Similar Appliance, TI-84 Calculator, Car or Other Motor Vehicle.
 			<br>
+			<br> We at the Horrorshow Hospital Radio Group are based in scenic, beautiful, My Bedroom, America. If you live nearby, come stop by our studio.
 			<br>
-			<br></p>
+			<br> <a href="https://horrorshowhospitalradio.github.io/aboutus">About the Horrorshow Hospital Radio Group</a>
+			<br>
+			<br>!! THIS PAGE IS IN VERY EARLY ALPHA - VERSION 0.10 !!
+			<br>Upcoming changes: Changelog, De-trashify this whole thing, Mess around with Jekyll (eventually), Fix Mobile Formatting (partially done)
+		</div>
+	<!-- This works fine I think. This is the audio stream. -Horrorshow Programmer -->
+	<audio src="http://172.223.83.42:8000/live" autoplay="false" muted="false" controls="true" volume="0.5" style="margin: 0 auto; display: block;"></audio>
+		<div class="footer">
+			<footer>For song requests, complaints and similar matters, if you have this site you'll know where to find me juuuust fine. Don't be afraid to contact me, I don't bite. :P</footer>
+		</div>
+	</div>
 </body>
 </html>
